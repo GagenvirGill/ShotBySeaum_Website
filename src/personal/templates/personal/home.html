@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div style="border: 2px solid #000;">
+    <h3>This is the Body</h3>
+    <p>Here is where you put stuff that should be in the body of websites</p>
+
+    {% include 'personal/snippets/body_snippet.html' %}
+
+    <img src="{% static 'personal/images/homies.png' %}" style="max-width: 1000px; max-height: 1000px;">
+</div>
+
+{% endblock content %}
