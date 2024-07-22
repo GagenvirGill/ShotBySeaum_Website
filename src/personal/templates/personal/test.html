@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <img src="{% static 'personal/images/pic1.png' %}" class="img-fluid d-block mx-auto" style="width: 95%; height: 100vh; background: var(--bs-secondary-color); object-fit: cover;">
+        </div>
+        <div class="col-sm">
+            <img src="{% static 'personal/images/pic2.png' %}" class="img-fluid d-block mx-auto" style="width: 95%; height: 100vh; background: var(--bs-secondary-color); object-fit: cover;">
+        </div>
+        <div class="col-sm">
+            <img src="{% static 'personal/images/pic3.png' %}" class="img-fluid d-block mx-auto" style="width: 95%; height: 100vh; background: var(--bs-secondary-color); object-fit: cover;">
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
